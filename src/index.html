@@ -10,12 +10,12 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-<!-- and it's easy to individually load additional languages -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
 
-<script>hljs.highlightAll();</script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body class="d-flex">
@@ -26,16 +26,27 @@
                 <img class="me-2" src="img/bootstrap-logo-shadow.png" alt="Bootstrap Logo" width="40px" height="33px">
                 <h5 class="mb-0">Docs Template</h5>
             </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#docsSidebar" aria-label="Close Sidebar"></button>
+            <button class="btn-close d-md-none me-1 opacity-25" type="button" data-bs-dismiss="offcanvas" data-bs-target="#docsSidebar" aria-label="Close Sidebar"></button>
         </div>
         <div class="offcanvas-body p-3">
-            <nav class="docs-nav w-100">
+            <nav class="docs-nav w-100" id="docsNav">
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Introduction</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quickstart</a>
+                        <a class="nav-link" href="#quickstart">Quickstart</a>
+                        <ul class="nav flex-column border-start ps-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#setup-project">Setup project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#create-folders">Create folders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#choose-template">Choose template</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Projects</a>
@@ -58,7 +69,7 @@
     </aside>
 
     <main class="docs-content w-100">
-        <div class="container col-8 py-3 py-md-5">
+        <div class="container col-8" data-bs-spy="scroll" data-bs-target="#docsNav" data-bs-smooth-scroll="true" tabindex="0">
             <section>
                 <h1>Documentation template with Bootstrap 5 and Vite.js</h1>
             </section>
@@ -67,25 +78,43 @@
                 <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
             </section>
             <section>
-                <h2>Quickstart</h2>
-                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took.</p>
-                <h3 class="mt-5">Setup project</h3>
-                <p>More obscure latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source:</p>
-                <ul>
-                    <li>If you are going to use a passage of Lorem Ipsum</li>
-                    <li>All the Lorem Ipsum generators on the Internet tend to repeat</li>
-                    <li>It uses a dictionary of over 200 Latin words, combined with a handful</li>
-                </ul>
-                <h3 class="mt-5">Create folders</h3>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <a href="#">with the release</a> of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.</p>
-                <p class="alert alert-primary"><b>Note:</b> using these elements isn’t as complicated as it might appear at first glance</p>
-                <h3 class="mt-5">Choose template</h3>
-                <p>All of the content that is visible on a web page is nested between opening and closing body tags. The body is the primary container of the content that makes up a web page.</p>
-                <pre><code class="language-markup">&lt;p>lala&lt;/p></code></pre>
+                <div id="quickstart">
+                    <h2>Quickstart</h2>
+                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took.</p>
+                </div>
 
+                <div id="setup-project">
+                    <h3 class="mt-5">Setup project</h3>
+                    <p>More obscure latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source:</p>
+                    <ul>
+                        <li>If you are going to use a passage of Lorem Ipsum</li>
+                        <li>All the Lorem Ipsum generators on the Internet tend to repeat</li>
+                        <li>It uses a dictionary of over 200 Latin words, combined with a handful</li>
+                    </ul>
+                </div>
 
+                <div id="create-folders">
+                    <h3 class="mt-5">Create folders</h3>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <a href="#">with the release</a> of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.</p>
+                    <p class="alert alert-primary"><b>Note:</b> using these elements isn’t as complicated as it might appear at first glance</p>
+                </div>
 
-            
+                <div id="choose-template">
+                    <h3 class="mt-5">Choose template</h3>
+                    <p>All of the content that is visible on a web page is nested between opening and closing body tags. The body is the primary container of the content that makes up a web page.</p>
+                    <pre><code class="language-markup">&lt;p>lala&lt;/p></code></pre>
+                </div>
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non enim eleifend, consectetur ligula et, porttitor ante. Pellentesque ac sollicitudin lacus. In dolor magna, vulputate aliquet eros ac, commodo dapibus velit. Curabitur commodo nibh tortor, id sagittis est tristique ut. Sed id ante a lectus consequat tempus at in felis. Etiam sagittis nunc et magna suscipit, vel ultricies mi rutrum. In quis suscipit sem. Etiam ultricies ex ut dolor maximus, quis sodales odio pellentesque. Morbi aliquet sit amet erat vel elementum. Nullam mattis lacus id porta commodo.
+
+                    Vivamus bibendum lectus sapien, ut vestibulum purus semper nec. Fusce et ligula magna. Phasellus venenatis volutpat orci et elementum. Pellentesque id turpis purus. Aliquam quis aliquet velit. Phasellus volutpat vel nunc sit amet posuere. Maecenas quis iaculis eros. Nunc vulputate velit urna, vel finibus mauris malesuada sed. Mauris lacinia risus odio, fringilla auctor metus ultrices vitae. Pellentesque pulvinar nibh quis nulla ultricies suscipit.
+                    
+                    Curabitur iaculis maximus urna et eleifend. In id faucibus enim. Nam commodo consequat tellus eget sodales. Fusce magna leo, rutrum ut venenatis vitae, sollicitudin ac velit. Donec non sagittis purus, ut egestas velit. Vestibulum tempus purus sed elit lobortis sagittis. Ut eget magna nec est mattis sodales. Pellentesque scelerisque, mauris eu egestas volutpat, nisi dui consectetur turpis, vitae eleifend lectus mi varius nisl. Donec lobortis magna sit amet augue euismod consectetur. Sed finibus mattis tellus, eu dapibus sapien iaculis vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam fermentum dignissim leo, at consectetur nulla dignissim non. Vestibulum tristique felis augue, tincidunt posuere ante sagittis eget. Duis a purus eget sapien faucibus porta id dictum nisl.
+                    
+                    Mauris viverra elit nunc, et gravida tellus luctus sed. Cras volutpat sem dui, a hendrerit est sollicitudin ut. Vestibulum consequat vel libero at consectetur. Integer ut mattis felis. Morbi varius, elit et gravida eleifend, est leo varius lacus, in finibus metus augue ut orci. Cras at dignissim diam. Donec facilisis enim sem, id faucibus lectus lacinia eget. Suspendisse vel egestas metus, a efficitur magna. Nullam nisi leo, blandit et rutrum nec, finibus ut velit. Nullam semper ex sit amet leo maximus, et pulvinar ligula molestie. Nam diam arcu, rhoncus a est in, efficitur pretium sem. Suspendisse imperdiet dui in lacus blandit, egestas malesuada ipsum ultrices. Donec dapibus turpis et molestie pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue lobortis sapien efficitur aliquam. Aenean ullamcorper ante vel erat luctus laoreet.
+                    
+                    Donec placerat et est id bibendum. Vestibulum ut laoreet diam. Quisque id orci eget sem posuere convallis ac non metus. Aenean vitae aliquam tellus. Quisque tempor elit vel tellus dapibus, a aliquam enim consectetur. Nam tincidunt augue ultrices blandit egestas. Ut ex nisi, feugiat ut turpis at, aliquam consequat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ultrices felis vitae tempus. Suspendisse vestibulum, massa a varius aliquam, eros neque vestibulum lectus, et lacinia est leo ultrices nisl.</p>
+
             </section>
         </div>
     </main>
