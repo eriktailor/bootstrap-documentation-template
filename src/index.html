@@ -35,18 +35,22 @@
                         <a class="nav-link" href="#">Introduction</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#quickstart">Quickstart</a>
-                        <ul class="nav flex-column border-start ps-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#setup-project">Setup project</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#create-folders">Create folders</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#choose-template">Choose template</a>
-                            </li>
-                        </ul>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#docsSubmenu2" role="button" aria-expanded="false" aria-controls="docsSubmenu2">
+                            Quickstart
+                        </a>
+                        <div class="collapse" id="docsSubmenu2">
+                            <ul class="nav flex-column border-start ps-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#setup-project">Setup project</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#create-folders">Create folders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#choose-template">Choose template</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Projects</a>
@@ -69,7 +73,7 @@
     </aside>
 
     <main class="docs-content w-100">
-        <div class="container col-8" data-bs-spy="scroll" data-bs-target="#docsNav" data-bs-smooth-scroll="true" tabindex="0">
+        <div class="container col-8" data-bs-spy="scroll" data-bs-target="#docsNav" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -80%" tabindex="0">
             <section>
                 <h1>Documentation template with Bootstrap 5 and Vite.js</h1>
             </section>
