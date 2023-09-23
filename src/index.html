@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Documentation | Bootstrap 5</title>
     <link rel="stylesheet" href="scss/styles.scss">
-    <script type="module" src="./js/main.js"></script>
+    <!-- <script type="module" src="./js/main.js"></script> -->
 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -32,10 +33,22 @@
             <nav class="docs-nav w-100" id="docsNav">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Introduction</a>
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#docsSubmenu1" href="#introduction" role="button" aria-expanded="false" aria-controls="docsSubmenu1">
+                            Introduction
+                        </a>
+                        <div class="collapse" id="docsSubmenu1">
+                            <ul class="nav flex-column border-start ps-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#featuring">Featuring</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#resources">Resources</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#docsSubmenu2" role="button" aria-expanded="false" aria-controls="docsSubmenu2">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#docsSubmenu2" href="#quickstart" role="button" aria-expanded="false" aria-controls="docsSubmenu2">
                             Quickstart
                         </a>
                         <div class="collapse" id="docsSubmenu2">
@@ -73,13 +86,57 @@
     </aside>
 
     <main class="docs-content w-100">
-        <div class="container col-8" data-bs-spy="scroll" data-bs-target="#docsNav" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -80%" tabindex="0">
+        <div class="container col-md-10 col-lg-8 col-xl-6" data-bs-spy="scroll" data-bs-target="#docsNav" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -80%" tabindex="0">
             <section>
                 <h1>Documentation template with Bootstrap 5 and Vite.js</h1>
             </section>
             <section>
-                <h2>Introduction</h2>
-                <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <div id="introduction">
+                    <h2>Introduction</h2>
+                    <p class="lead">This is a free documentation template with a modern, sleek design, built on Bootstrap 5 and Vite.js. Just download it and customize for your needs easily.</p>
+                </div>
+
+                <div id="featuring">
+                    <h3 class="mt-5">Featuring</h3>
+                    <div class="row row-cols row-cols-lg-4 text-center g-3">
+                        <div class="col">
+                            <div class="bg-primary-subtle rounded-2 p-4">
+                                <i class="uil uil-html5-alt text-primary d-block fs-1 mb-2"></i>
+                                <h3 class="h6">Clean semantic code</h3>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="bg-primary-subtle rounded-2 p-4">
+                                <i class="uil uil-brackets-curly text-primary d-block fs-1 mb-2"></i>
+                                <h3 class="h6">Ordered scss partials</h3>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="bg-primary-subtle rounded-2 p-4">
+                                <i class="uil uil-web-section-alt text-primary d-block fs-1 mb-2"></i>
+                                <h3 class="h6">Scrollspy sidebar menu</h3>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="bg-primary-subtle rounded-2 p-4">
+                                <i class="uil uil-spin text-primary d-block fs-1 mb-2"></i>
+                                <h3 class="h6">Live reload with vite.js</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="resources">
+                    <h3 class="mt-5">Resources</h3>
+                    <p>The following resources was used to complete this project:</p>
+                    <ul>
+                        <li><b>Bootstrap</b> - the latest version, Bootstrap 5 gives the base structure of the template</li>
+                        <li><b>Vite.js</b> - a new generation frontend developer tooling</li>
+                        <li><b>Sass</b> - the most popular css preprocessor to write advanced styles</li>
+                        <li><b>GitHub</b> - version controller tool, used to maintain the updates of the project</li>
+                        <li><b>Unicons</b> - a free collection of scaleable and colorable svg UI icons</li>
+                        <li><b>Prism.js</b> - a javascript library for syntax highlighting code blocks</li>
+                    </ul>
+                </div>
             </section>
             <section>
                 <div id="quickstart">
@@ -125,7 +182,7 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/prism.js"></script>
 </body>
