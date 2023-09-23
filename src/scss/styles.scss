@@ -40,3 +40,9 @@
         margin-left: 300px;
     }
 }
+
+.bg-gradient-bulb-left {
+    @include media-breakpoint-up(lg) {
+        left: 300px;
+    }
+}
