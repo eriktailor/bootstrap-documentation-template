@@ -1,0 +1,23 @@
+pre[class*=language-] {
+    border-radius: 6px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+section {
+    padding: 50px 0;
+    border-bottom: 1px solid $light;
+    > div {
+        padding: 30px 0;
+    }
+}
+
+.alert {
+    border: 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-weight: 500;
+}

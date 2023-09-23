@@ -4,6 +4,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: $body-color;
+    background-color: $body-bg;
     line-height: 1.8;
     letter-spacing: -0.02em;
 }
@@ -55,4 +56,9 @@ h2, .h2 {
 h3, .h3 {
     font-size: 1.3rem;
     margin-bottom: 0.75rem;
+}
+
+h4, .h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }

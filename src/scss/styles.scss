@@ -10,30 +10,10 @@
 // Partials
 @import 'typography';
 @import 'prism';
+@import 'components';
 
 
-body {
-    background-color: $body-bg;
-}
 
-pre[class*=language-] {
-    border-radius: 6px;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    line-height: 1.8;
-}
-
-section {
-    padding: 50px 0;
-    border-bottom: 1px solid $light;
-    > div {
-        padding: 25px 0;
-    }
-}
-
-.alert {
-    border: 0;
-}
 
 .docs-sidebar {
     width: 300px;
