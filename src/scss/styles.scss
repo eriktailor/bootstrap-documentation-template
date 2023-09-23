@@ -1,0 +1,40 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Partials
+@import 'typography';
+
+
+body {
+    background-color: $body-bg;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.docs-sidebar {
+    width: 300px;
+    .docs-nav {
+        .nav-link {
+            padding: 6px 0;  
+            color: $body-color;
+            font-weight: 500;
+            &:hover, &:focus {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.docs-content {
+    @include media-breakpoint-up(lg) {
+        margin-left: 300px;
+    }
+}

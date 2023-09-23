@@ -1,0 +1,54 @@
+/* -------------------------------------------------------- 
+# Base
+---------------------------------------------------------*/
+body {
+    font-family: 'Inter', sans-serif;
+    color: $body-color;
+    line-height: 1.8;
+    letter-spacing: -0.02em;
+}
+
+p.lead {
+    font-size: 1.15rem;
+}
+
+a {
+    color: $primary;
+    @extend .link-offset-1;
+    &:hover, &:focus {
+        color: $primary-light;
+    }
+}
+
+ul {
+    padding-left: 1rem;
+    li {
+        padding-left: 0.5rem;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/* -------------------------------------------------------- 
+# Headings
+---------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: $dark;
+}
+
+h1, .h1 {
+    font-size: 3.2rem;
+}
+
+h2, .h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3, .h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
