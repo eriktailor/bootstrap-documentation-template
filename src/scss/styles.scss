@@ -9,10 +9,18 @@
 
 // Partials
 @import 'typography';
+@import 'prism';
 
 
 body {
     background-color: $body-bg;
+}
+
+pre[class*=language-] {
+    border-radius: 6px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.8;
 }
 
 section {
