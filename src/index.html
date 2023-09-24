@@ -59,18 +59,23 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Changelogs</a>
+                        <ul class="nav flex-column border-start ps-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#create-project">Create project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#coding-rules">Coding rules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#available-tags">Available tags</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Versions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Theming</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Members</a>
                     </li>
                 </ul>
             </nav>
@@ -106,8 +111,8 @@
             <section>
                 <div id="introduction">
                     <h2>Introduction</h2>
-                    <p class="lead">This is a free documentation template with a modern sleek design, built on Bootstrap 5 and Vite.js. Just download it and customize for your needs easily.</p>
-                    <a class="btn btn-primary" href="#quickstart">Quickstart</a>
+                    <p class="lead mb-4">This is a free documentation template with a modern sleek design, built on Bootstrap 5 and Vite.js. Just download it and easily customize for your needs.</p>
+                    <a class="btn btn-primary" href="#quickstart">See how to get started</a>
                 </div>
 
                 <div id="featuring">
@@ -117,7 +122,7 @@
                             <i class="uil uil-html5-alt text-primary d-block display-6 me-4"></i>
                             <div>
                                 <h4>Semantic html5 code</h4>
-                                <p class="mb-0">It has survived not only five centuries, but also the leap into typesetting.</p>
+                                <p class="mb-0">The source code is valid html5 and it is well organized.</p>
                             </div>
                         </div>
                     </div>
@@ -126,7 +131,7 @@
                             <i class="uil uil-web-section-alt text-primary d-block display-6 me-4"></i>
                             <div>
                                 <h4>Dynamic sidebar menu</h4>
-                                <p class="mb-0">The word in classical literature, discovered the undoubtable source.</p>
+                                <p class="mb-0">The sidebar navigation is dynamically collapsing with scrollspy.</p>
                             </div>
                         </div>
                     </div>
@@ -135,7 +140,16 @@
                             <i class="uil uil-desktop-alt text-primary d-block display-6 me-4"></i>
                             <div>
                                 <h4>Mobile friendly layout</h4>
-                                <p class="mb-0">Visible on a web page is nested between opening and closing body tags.</p>
+                                <p class="mb-0">The template is 100% responsive, it looks great on every device.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4">
+                        <div class="d-flex align-items-center">
+                            <i class="uil uil-palette text-primary d-block display-6 me-4"></i>
+                            <div>
+                                <h4>Sketch file included</h4>
+                                <p class="mb-0">The design source sketch file is bundled with the template.</p>
                             </div>
                         </div>
                     </div>
@@ -144,19 +158,19 @@
                     <h3>Resources</h3>
                     <p>The following free resources were used to complete this project:</p>
                     <ul>
-                        <li><b>Bootstrap</b> - the latest version, Bootstrap 5 gives the base structure of the template</li>
-                        <li><b>Vite.js</b> - a new generation frontend developer tooling</li>
-                        <li><b>Sass</b> - the most popular css preprocessor to write advanced styles</li>
-                        <li><b>GitHub</b> - version controller tool, used to maintain the updates of the project</li>
-                        <li><b>Unicons</b> - a free collection of scaleable and colorable svg UI icons</li>
-                        <li><b>Prism.js</b> - a javascript library for syntax highlighting code blocks</li>
+                        <li><a target="_blank" href="https://getbootstrap.com">Bootstrap</a> - the latest version, Bootstrap 5 gives the base structure of the template</li>
+                        <li><a target="_blank" href="https://vitejs.dev">Vite.js</a> - a new generation frontend developer tooling</li>
+                        <li><a target="_blank" href="https://sass-lang.com">Sass</a> - the most popular css preprocessor to write advanced styles</li>
+                        <li><a target="_blank" href="https://github.com">GitHub</a> - version controller tool, used to maintain the updates of the project</li>
+                        <li><a target="_blank" href="https://iconscout.com/unicons">Unicons</a> - a free collection of scaleable and colorable svg UI icons</li>
+                        <li><a target="_blank" href="https://prismjs.com">Prism.js</a> - a javascript library for syntax highlighting code blocks</li>
                     </ul>
                 </div>
             </section>
             <section>
                 <div id="quickstart">
                     <h2>Quickstart</h2>
-                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took.</p>
+                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown.</p>
                 </div>
 
                 <div id="setup-project">
@@ -171,34 +185,91 @@
 
                 <div id="create-folders">
                     <h3>Create folders</h3>
-                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <a href="#">with the release</a> of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.</p>
-                    <p class="alert alert-primary"><b>Note:</b> using these elements isn’t as complicated as it might appear at first glance</p>
+                    <p class="mb-4">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <a href="#">with the release</a> of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.</p>
+                    <img class="img-fluid rounded-4" src="img/browser_mockup_1.jpg" alt="Browser mockup">
                 </div>
 
                 <div id="choose-template">
                     <h3>Choose template</h3>
-                    <p>All of the content that is visible on a web page is nested between opening and closing body tags. The body is the primary container of the content that makes up a web page.</p>
-                    <pre><code class="language-markup">&lt;p>lala&lt;/p></code></pre>
+                    <p>True, you may say that, by exceeding caution, you may possibly escape these and the multitudinous other evil chances of life. But handle Queequeg's monkey-rope heedfully as I would, sometimes he jerked it so, that I <b>came very near sliding overboard</b>. Nor could I possibly forget that, do what I would, I only had the management of one end of it.</p>
+                </div>
+            </section>
+            <section>
+                <div id="projects">
+                    <h2>Projects</h2>
+                    <p class="lead">And yet still further pondering while I jerked him now and then from between the whale and ship, which would <a href="#">threaten to jam</a> him still further pondering, I say saw that this situation of mine was the precise situation.</p>
                 </div>
 
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non enim eleifend, consectetur ligula et, porttitor ante. Pellentesque ac sollicitudin lacus. In dolor magna, vulputate aliquet eros ac, commodo dapibus velit. Curabitur commodo nibh tortor, id sagittis est tristique ut. Sed id ante a lectus consequat tempus at in felis. Etiam sagittis nunc et magna suscipit, vel ultricies mi rutrum. In quis suscipit sem. Etiam ultricies ex ut dolor maximus, quis sodales
-                    odio pellentesque. Morbi aliquet sit amet erat vel elementum. Nullam mattis lacus id porta commodo.
+                <div id="create-project">
+                    <h3>Create project</h3>
+                    <p>Follow these steps to create a brand new project to your portfolio:</p>
+                    <ol>
+                        <li>If you are going to use a passage of Lorem Ipsum</li>
+                        <li>All the Lorem Ipsum generators on the Internet tend to repeat</li>
+                        <li>It uses a dictionary of over 200 Latin words, combined with a handful</li>
+                        <li>In most cases, he, one way or other, has this with a plurality of other mortals</li>
+                        <li>If your banker breaks, you snap; if your apothecary by mistake sends you poison</li>
+                    </ol>
+                    <a class="btn btn-primary" href="#projects">Go to projects page</a>
+                </div>
 
-                    Vivamus bibendum lectus sapien, ut vestibulum purus semper nec. Fusce et ligula magna. Phasellus venenatis volutpat orci et elementum. Pellentesque id turpis purus. Aliquam quis aliquet velit. Phasellus volutpat vel nunc sit amet posuere. Maecenas quis iaculis eros. Nunc vulputate velit urna, vel finibus mauris malesuada sed. Mauris lacinia risus odio, fringilla auctor metus ultrices vitae. Pellentesque pulvinar nibh quis nulla ultricies suscipit.
+                <div id="coding-rules">
+                    <h3>Coding rules</h3>
+                    <p>True, you may say that, by exceeding caution, you may possibly escape these and the multitudinous other evil chances of life. But handle <a href="#">queequeg monkey-rope</a> heedfully as I would, sometimes he jerked it so, that I came very near sliding overboard.</p>
+<pre><code class="language-markup">&lt;section id=&quot;example&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h2&gt;My amazing title&lt;/h2&gt;
+        &lt;p&gt;This is the description text&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </div>
 
-                    Curabitur iaculis maximus urna et eleifend. In id faucibus enim. Nam commodo consequat tellus eget sodales. Fusce magna leo, rutrum ut venenatis vitae, sollicitudin ac velit. Donec non sagittis purus, ut egestas velit. Vestibulum tempus purus sed elit lobortis sagittis. Ut eget magna nec est mattis sodales. Pellentesque scelerisque, mauris eu egestas volutpat, nisi dui consectetur turpis, vitae eleifend lectus mi varius nisl. Donec lobortis magna sit amet augue euismod
-                    consectetur. Sed finibus mattis tellus, eu dapibus sapien iaculis vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam fermentum dignissim leo, at consectetur nulla dignissim non. Vestibulum tristique felis augue, tincidunt posuere ante sagittis eget. Duis a purus eget sapien faucibus porta id dictum nisl.
-
-                    Mauris viverra elit nunc, et gravida tellus luctus sed. Cras volutpat sem dui, a hendrerit est sollicitudin ut. Vestibulum consequat vel libero at consectetur. Integer ut mattis felis. Morbi varius, elit et gravida eleifend, est leo varius lacus, in finibus metus augue ut orci. Cras at dignissim diam. Donec facilisis enim sem, id faucibus lectus lacinia eget. Suspendisse vel egestas metus, a efficitur magna. Nullam nisi leo, blandit et rutrum nec, finibus ut velit. Nullam
-                    semper ex sit amet leo maximus, et pulvinar ligula molestie. Nam diam arcu, rhoncus a est in, efficitur pretium sem. Suspendisse imperdiet dui in lacus blandit, egestas malesuada ipsum ultrices. Donec dapibus turpis et molestie pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue lobortis sapien efficitur aliquam. Aenean ullamcorper ante vel erat luctus laoreet.
-
-                    Donec placerat et est id bibendum. Vestibulum ut laoreet diam. Quisque id orci eget sem posuere convallis ac non metus. Aenean vitae aliquam tellus. Quisque tempor elit vel tellus dapibus, a aliquam enim consectetur. Nam tincidunt augue ultrices blandit egestas. Ut ex nisi, feugiat ut turpis at, aliquam consequat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ultrices felis vitae tempus. Suspendisse vestibulum, massa a varius aliquam,
-                    eros neque vestibulum lectus, et lacinia est leo ultrices nisl.</p>
-
+                <div id="available-tags">
+                    <h3>Available tags</h3>
+                    <p>You can use these html5 tags to define your layout base:</p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tag</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="badge bg-primary-subtle text-primary">html</span></td>
+                                    <td>Represents the root of an HTML document.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-primary-subtle text-primary">article</span></td>
+                                    <td>It specifies independent, self-contained content.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-primary-subtle text-primary">section</span></td>
+                                    <td>It defines a section in a document, similar as a content div.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-primary-subtle text-primary">header</span></td>
+                                    <td>It represents a container for introductory content or a set of navigational links.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-primary-subtle text-primary">footer</span></td>
+                                    <td>This tag defines a footer for a document or section.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="versions">
+                    <h2>Versions</h2>
+                    <p class="lead">Nor could I possibly forget that, do what I would, I only had the management.</p>
+                </div>
             </section>
         </div>
 
-        <svg class="position-fixed end-0 bottom-0" width="540px" height="731px" viewBox="0 0 540 731" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg class="bg-gradient-bulb-right position-fixed end-0 bottom-0" width="540px" height="731px" viewBox="0 0 540 731" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <rect id="path-_mk43jvm0v-1" x="0" y="0" width="540" height="731"></rect>
                 <radialGradient cx="50%" cy="53.2372883%" fx="50%" fy="53.2372883%" r="44.5431888%" id="radialGradient-_mk43jvm0v-3">

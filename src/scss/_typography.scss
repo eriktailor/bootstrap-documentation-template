@@ -25,16 +25,6 @@ b, strong {
     color: $dark;
 }
 
-ul {
-    padding-left: 1rem;
-    li {
-        padding-left: 0.5rem;
-        &:not(:last-child) {
-            margin-bottom: 5px;
-        }
-    }
-}
-
 /* -------------------------------------------------------- 
 # Headings
 ---------------------------------------------------------*/

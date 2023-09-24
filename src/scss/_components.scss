@@ -1,9 +1,6 @@
-pre[class*=language-] {
-    border-radius: 6px;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    line-height: 1.8;
-}
+/* -------------------------------------------------------- 
+# Sections
+---------------------------------------------------------*/
 
 section {
     padding: 50px 0;
@@ -13,11 +10,88 @@ section {
     }
 }
 
+/* -------------------------------------------------------- 
+# Listings
+---------------------------------------------------------*/
+
+ul {
+    padding-left: 1rem;
+    li {
+        padding-left: 0.5rem;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+ol {
+    counter-reset:item;
+    padding-left: 0;
+    > li {
+        margin:0;
+        padding:0 0 0 2.25em;
+        text-indent:-2em;
+        list-style-type:none;
+        counter-increment:item;
+        &:before {
+            display:inline-block;
+            width:1.5em;
+            padding-right:0.75em;
+            font-weight:bold;
+            text-align:right;
+            content:counter(item) ".";
+        }
+    }
+}
+
+/* -------------------------------------------------------- 
+# Tables
+---------------------------------------------------------*/
+
+table {
+    td {
+        color: $body-color !important;
+    }
+}
+
+/* -------------------------------------------------------- 
+# Alerts
+---------------------------------------------------------*/
+
 .alert {
     border: 0;
 }
 
+/* -------------------------------------------------------- 
+# Buttons
+---------------------------------------------------------*/
+
 .btn {
     padding: 10px 20px;
     font-weight: 500;
+}
+
+/* -------------------------------------------------------- 
+# Codes
+---------------------------------------------------------*/
+
+pre[class*=language-] {
+    border-radius: 6px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* -------------------------------------------------------- 
+# Background gradient bulbs
+---------------------------------------------------------*/
+
+.bg-gradient-bulb-left {
+    @include media-breakpoint-up(lg) {
+        left: 300px;
+    }
+}
+
+.bg-gradient-bulb-left, .bg-gradient-bulb-right {
+    z-index: -1;
 }
