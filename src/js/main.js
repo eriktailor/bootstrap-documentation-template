@@ -5,8 +5,9 @@ $(document).ready(function() {
      */
     $('section[id]').each(function() {
         var sectionId = $(this).attr('id');
+        var sectionTitle = sectionId[0].toUpperCase() + sectionId.slice(1).replace(/-/g, ' ');
         var navItem = $('<li class="nav-item"></li>');
-        var navLink = $('<a class="nav-link"></a>').attr('href', '#' + sectionId).text(sectionId);
+        var navLink = $('<a class="nav-link"></a>').attr('href', '#' + sectionId).text(sectionTitle);
         
         // Find nested div elements within the section
         var nestedDivs = $(this).find('div[id]');
@@ -17,8 +18,9 @@ $(document).ready(function() {
             // Create sub-navigation links for nested divs
             nestedDivs.each(function() {
                 var divId = $(this).attr('id');
+                var divTitle = divId[0].toUpperCase() + divId.slice(1).replace(/-/g, ' ');
                 var subNavItem = $('<li class="nav-item"></li>');
-                var subNavLink = $('<a class="nav-link"></a>').attr('href', '#' + divId).text(divId);
+                var subNavLink = $('<a class="nav-link"></a>').attr('href', '#' + divId).text(divTitle);
                 subNavItem.append(subNavLink);
                 subNav.append(subNavItem);
             });
