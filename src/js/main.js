@@ -38,6 +38,21 @@ $(document).ready(function() {
         $('#docsMenu > ul.nav').append(navItem);
     });
 
+    /**
+     * Dynamic search field init
+     */
+    $('section[id] h3').each(function() {
+        var heading = $(this).text();
+        var parentId = $(this).closest('section').attr('id');
+        var parentName = parentId[0].toUpperCase() + parentId.slice(1).replace(/-/g, ' ');
+        
+        var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4">';
+            listItem += '<h4 class="mt-1">'+heading+'</h4>';
+            listItem += '<small>'+parentName+'</small>';
+            listItem += '</a>';
+
+        $('#searchResults').append(listItem);
+    });
 
 
 });
