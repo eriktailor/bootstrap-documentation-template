@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     /**
-     * Build the sidebar menu dynamically from sections
+     * Build sidebar menu dynamically from sections and divs
      */
     $('section[id]').each(function() {
         var sectionId = $(this).attr('id');
@@ -9,13 +9,13 @@ $(document).ready(function() {
         var navItem = $('<li class="nav-item"></li>');
         var navLink = $('<a class="nav-link"></a>').attr('href', '#' + sectionId).text(sectionTitle);
         
-        // Find nested div elements within the section
+        // find nested div elements within the section
         var nestedDivs = $(this).find('div[id]');
 
         if (nestedDivs.length > 0) {
             var subNav = $('<ul class="nav flex-column border-start ps-3"></ul>');
 
-            // Create sub-navigation links for nested divs
+            // create sub-navigation links for nested divs
             nestedDivs.each(function() {
                 var divId = $(this).attr('id');
                 var divTitle = divId[0].toUpperCase() + divId.slice(1).replace(/-/g, ' ');
@@ -34,6 +34,7 @@ $(document).ready(function() {
             navItem.append(navLink);
         }
 
+        // append the built output
         $('#docsMenu > ul.nav').append(navItem);
     });
 

@@ -12,6 +12,23 @@
 
 <body class="d-flex">
 
+    <div class="loader" id="docsLoader" role="status">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <script>
+            document.onreadystatechange = function () {
+                if (document.readyState !== 'complete') {
+                    document.querySelector('body').style.visibility = 'hidden';
+                    document.querySelector('#docsLoader').style.visibility = 'visible';
+                } else {
+                    document.querySelector('#docsLoader').style.display = 'none';
+                    document.querySelector('body').style.visibility = 'visible';
+                }
+            };
+        </script>
+    </div>
+
     <aside class="docs-sidebar offcanvas-lg offcanvas-start fixed-top vh-100 bg-white" id="docsSidebar">
         <div class="offcanvas-header d-flex">
             <a class="navbar-brand d-flex align-items-center" href="/">
@@ -21,55 +38,6 @@
             <button class="btn-close d-md-none me-1 opacity-25" type="button" data-bs-dismiss="offcanvas" data-bs-target="#docsSidebar" aria-label="Close Sidebar"></button>
         </div>
         <div class="offcanvas-body p-3">
-           <!--  <nav class="docs-nav w-100" id="docsNav">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#introduction">Introduction</a>
-                        <ul class="nav flex-column border-start ps-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#featuring">Featuring</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#resources">Resources</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quickstart">Quickstart</a>
-                        <ul class="nav flex-column border-start ps-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#setup-project">Setup project</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#create-folders">Create folders</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#choose-template">Choose template</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                        <ul class="nav flex-column border-start ps-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#create-project">Create project</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#coding-rules">Coding rules</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#available-tags">Available tags</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Versions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Theming</a>
-                    </li>
-                </ul>
-            </nav> -->
             <nav class="docs-nav w-100" id="docsMenu">
                 <ul class="nav flex-column">
                 </ul>
@@ -104,6 +72,7 @@
             <section>
                 <h1>Documentation template with Bootstrap 5 and Vite.js</h1>
             </section>
+
             <section id="introduction">
                 <div>
                     <h2>Introduction</h2>
@@ -128,7 +97,7 @@
                             <i class="uil uil-web-section-alt text-primary d-block display-6 me-4"></i>
                             <div>
                                 <h4>Dynamic sidebar menu</h4>
-                                <p class="mb-0">The sidebar navigation is dynamically collapsing with scrollspy.</p>
+                                <p class="mb-0">The sidebar nav is automatically generated from the content.</p>
                             </div>
                         </div>
                     </div>
@@ -165,6 +134,7 @@
                     </ul>
                 </div>
             </section>
+
             <section id="getting-started">
                 <div>
                     <h2>Getting started</h2>
@@ -198,7 +168,8 @@
                     <p>True, you may say that, by exceeding caution, you may possibly escape these and the multitudinous other evil chances of life. But handle Queequeg's monkey-rope heedfully as I would, sometimes he jerked it so, that I <b>came very near sliding overboard</b>. Nor could I possibly forget that, do what I would, I only had the management of one end of it.</p>
                 </div>
             </section>
-            <section>
+
+            <section id="projects">
                 <div>
                     <h2>Projects</h2>
                     <p class="lead">And yet still further pondering while I jerked him now and then from between the whale and ship, which would <a href="#">threaten to jam</a> him still further pondering, I say saw that this situation of mine was the precise situation.</p>
@@ -265,8 +236,8 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div id="versions">
+            <section id="versions">
+                <div>
                     <h2>Versions</h2>
                     <p class="lead">Nor could I possibly forget that, do what I would, I only had the management.</p>
                 </div>
