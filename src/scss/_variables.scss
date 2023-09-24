@@ -1,11 +1,20 @@
 /* -------------------------------------------------------- 
 # Custom variables
 ---------------------------------------------------------*/
+
+// colors
 $body-bg: #F7F8FF;
 $body-color: #4f5264;
 $primary: #7C12F8;
 $primary-light: lighten($primary, 15%);
 $dark: #212529;
 $light: #c8c7d0;
+
+// inputs
+$input-bg: #FFFFFF;
+$input-padding-y: 12px;
+$input-padding-x: 16px;
+
+// components
 $card-bg: #FFFFFF;
 $table-bg: #FFFFFF;

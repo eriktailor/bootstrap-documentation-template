@@ -69,7 +69,11 @@
 
         <div class="container col-md-10 col-lg-8 col-xl-6" data-bs-spy="scroll" data-bs-target="#docsNav" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -70%" tabindex="0">
             <section>
-                <h1>Documentation template with Bootstrap 5 and Vite.js</h1>
+                <h1 class="mb-4">Documentation template with Bootstrap 5 and Vite.js</h1>
+                <button class="form-control text-start d-flex justify-content-between">
+                    <span class="text-muted">Search docs</span>
+                    <i class="uil uil-search"></i>
+                </button>
             </section>
 
             <section id="introduction">
@@ -146,6 +150,12 @@
                     <pre><code class="language-markup">npm install @eriktailor/bootstrap-docs-template</code></pre>
                 </div>
 
+                <div id="create-template">
+                    <h3>Create template</h3>
+                    <p class="mb-4">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <a href="#">with the release</a> of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.</p>
+                    <img class="img-fluid rounded-4" src="img/browser_mockup_1.jpg" alt="Browser mockup">
+                </div>
+
                 <div id="folder-structure">
                     <h3>Folder structure</h3>
                     <p>More <a href="#">obscure latin words</a>, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source:</p>
@@ -164,16 +174,16 @@
                                 styles.css
                             </div>
                         </div>
-                        <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderSrc" aria-expanded="false" aria-controls="folderSrc">
+                        <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderSrc" aria-expanded="true" aria-controls="folderSrc">
                             <i class="uil uil-folder text-primary fs-5"></i>
                             src
                         </button>
-                        <div class="collapse border-start ps-3 ms-2" id="folderSrc">
-                            <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderScss" aria-expanded="false" aria-controls="folderScss">
+                        <div class="collapse show border-start ps-3 ms-2" id="folderSrc">
+                            <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderScss" aria-expanded="true" aria-controls="folderScss">
                                 <i class="uil uil-folder text-primary fs-5"></i>
                                 scss
                             </button>
-                            <div class="collapse border-start ps-3 ms-2" id="folderScss">
+                            <div class="collapse show border-start ps-3 ms-2" id="folderScss">
                                 <div class="w-100">
                                     <i class="uil uil-file-alt text-primary fs-5"></i>
                                     components.scss
@@ -217,23 +227,12 @@
                             </div>
                         </div>
                     </div>
-                    <ul>
-                        <li>If you are going to use a passage of Lorem Ipsum</li>
-                        <li>All the Lorem Ipsum generators on the Internet tend to repeat</li>
-                        <li>It uses a dictionary of over 200 Latin words, combined with a handful</li>
-                    </ul>
-                </div>
-
-                <div id="create-template">
-                    <h3>Create template</h3>
-                    <p class="mb-4">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <a href="#">with the release</a> of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.</p>
-                    <img class="img-fluid rounded-4" src="img/browser_mockup_1.jpg" alt="Browser mockup">
                 </div>
 
                 <div id="dependencies">
                     <h3>Dependencies</h3>
-                    <p>True, you may say that, by exceeding caution, you may possibly escape these and the multitudinous other evil chances of life. But handle Queequeg's monkey-rope heedfully as I would, sometimes he jerked it so, that I <b>came very near sliding overboard</b>. Nor could I possibly forget that, do what I would, I only had the management.</p>
                     <p>Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter banh mi, squid keffiyeh High Life Brooklyn twee craft <a href="#">beer tousled chillwave</a>. PBR&B selfies chillwave, bespoke tote bag blog post-ironic. Single-origin coffee put a bird on it craft beer YOLO, Portland hella deep v Schlitz. Tumblr Bushwick post-ironic Thundercats. Vinyl 90's keytar, literally cardigan Williamsburg.</p>
+                    <p class="alert bg-primary-subtle" role="alert"><b>Note:</b> you may say that, by exceeding caution, you may possibly escape these and other evil.</p>
                 </div>
             </section>
 
@@ -265,6 +264,14 @@
         &lt;p&gt;This is the description text&lt;/p&gt;
     &lt;/div&gt;
 &lt;/section&gt;</code></pre>
+                    <p>True, you may say that, by exceeding caution, you may possibly escape these and the multitudinous other evil chances of life. But handle Queequeg's monkey-rope heedfully as I would, sometimes he jerked it so, that I came very near sliding overboard.</p>
+<pre><code class="language-javascript">$('#settingsCompanyLogo').change(function() {
+    let reader = new FileReader();
+    reader.onload = (e) => { 
+        $('#settingsCompanyLogoPreview').attr('src', e.target.result); 
+    }
+    reader.readAsDataURL(this.files[0]); 
+});</code></pre>
                 </div>
 
                 <div id="available-tags">
