@@ -39,8 +39,7 @@
         </div>
         <div class="offcanvas-body p-3">
             <nav class="docs-nav w-100" id="docsMenu">
-                <ul class="nav flex-column">
-                </ul>
+                <ul class="nav flex-column"></ul>
             </nav>
         </div>
     </aside>
@@ -123,7 +122,7 @@
 
                 <div id="resources">
                     <h3>Resources</h3>
-                    <p>The following free resources were used to complete this project:</p>
+                    <p>The following free resources were used along with this project:</p>
                     <ul>
                         <li><a target="_blank" href="https://getbootstrap.com">Bootstrap</a> - the latest version, Bootstrap 5 gives the base structure of the template</li>
                         <li><a target="_blank" href="https://vitejs.dev">Vite.js</a> - a new generation frontend developer tooling</li>
@@ -147,9 +146,77 @@
                     <pre><code class="language-markup">npm install @eriktailor/bootstrap-docs-template</code></pre>
                 </div>
 
-                <div id="setup-project">
-                    <h3>Setup project</h3>
+                <div id="folder-structure">
+                    <h3>Folder structure</h3>
                     <p>More <a href="#">obscure latin words</a>, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source:</p>
+                    <div class="card p-4 mb-3">
+                        <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderDist" aria-expanded="true" aria-controls="folderDist">
+                            <i class="uil uil-folder text-primary fs-5"></i>
+                            dist
+                        </button>
+                        <div class="collapse show border-start ps-3 ms-2" id="folderDist">
+                            <div class="w-100">
+                                <i class="uil uil-file-alt text-primary fs-5"></i>
+                                index.html
+                            </div>
+                            <div class="w-100">
+                                <i class="uil uil-file-alt text-primary fs-5"></i>
+                                styles.css
+                            </div>
+                        </div>
+                        <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderSrc" aria-expanded="false" aria-controls="folderSrc">
+                            <i class="uil uil-folder text-primary fs-5"></i>
+                            src
+                        </button>
+                        <div class="collapse border-start ps-3 ms-2" id="folderSrc">
+                            <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderScss" aria-expanded="false" aria-controls="folderScss">
+                                <i class="uil uil-folder text-primary fs-5"></i>
+                                scss
+                            </button>
+                            <div class="collapse border-start ps-3 ms-2" id="folderScss">
+                                <div class="w-100">
+                                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                                    components.scss
+                                </div>
+                                <div class="w-100">
+                                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                                    typography.scss
+                                </div>
+                                <div class="w-100">
+                                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                                    styles.scss
+                                </div>
+                            </div>
+                            <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderJs" aria-expanded="false" aria-controls="folderJs">
+                                <i class="uil uil-folder text-primary fs-5"></i>
+                                js
+                            </button>
+                            <div class="collapse border-start ps-3 ms-2" id="folderJs">
+                                <div class="w-100">
+                                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                                    admin.js
+                                </div>
+                                <div class="w-100">
+                                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                                    scripts.js
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderDesign" aria-expanded="false" aria-controls="folderDesign">
+                            <i class="uil uil-folder text-primary fs-5"></i>
+                            design
+                        </button>
+                        <div class="collapse border-start ps-3 ms-2" id="folderDesign">
+                            <div class="w-100">
+                                <i class="uil uil-file-alt text-primary fs-5"></i>
+                                layout.sketch
+                            </div>
+                            <div class="w-100">
+                                <i class="uil uil-file-alt text-primary fs-5"></i>
+                                logos.psd
+                            </div>
+                        </div>
+                    </div>
                     <ul>
                         <li>If you are going to use a passage of Lorem Ipsum</li>
                         <li>All the Lorem Ipsum generators on the Internet tend to repeat</li>
@@ -157,28 +224,29 @@
                     </ul>
                 </div>
 
-                <div id="create-folders">
-                    <h3>Create folders</h3>
+                <div id="create-template">
+                    <h3>Create template</h3>
                     <p class="mb-4">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <a href="#">with the release</a> of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.</p>
                     <img class="img-fluid rounded-4" src="img/browser_mockup_1.jpg" alt="Browser mockup">
                 </div>
 
-                <div id="choose-template">
-                    <h3>Choose template</h3>
-                    <p>True, you may say that, by exceeding caution, you may possibly escape these and the multitudinous other evil chances of life. But handle Queequeg's monkey-rope heedfully as I would, sometimes he jerked it so, that I <b>came very near sliding overboard</b>. Nor could I possibly forget that, do what I would, I only had the management of one end of it.</p>
+                <div id="dependencies">
+                    <h3>Dependencies</h3>
+                    <p>True, you may say that, by exceeding caution, you may possibly escape these and the multitudinous other evil chances of life. But handle Queequeg's monkey-rope heedfully as I would, sometimes he jerked it so, that I <b>came very near sliding overboard</b>. Nor could I possibly forget that, do what I would, I only had the management.</p>
+                    <p>Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter banh mi, squid keffiyeh High Life Brooklyn twee craft <a href="#">beer tousled chillwave</a>. PBR&B selfies chillwave, bespoke tote bag blog post-ironic. Single-origin coffee put a bird on it craft beer YOLO, Portland hella deep v Schlitz. Tumblr Bushwick post-ironic Thundercats. Vinyl 90's keytar, literally cardigan Williamsburg.</p>
                 </div>
             </section>
 
-            <section id="projects">
+            <section id="core-concepts">
                 <div>
-                    <h2>Projects</h2>
+                    <h2>Core concepts</h2>
                     <p class="lead">And yet still further pondering while I jerked him now and then from between the whale and ship, which would <a href="#">threaten to jam</a> him still further pondering, I say saw that this situation of mine was the precise situation.</p>
                 </div>
 
                 <div id="create-project">
                     <h3>Create project</h3>
                     <p>Follow these steps to create a brand new project to your portfolio:</p>
-                    <ol>
+                    <ol class="mb-4">
                         <li>If you are going to use a passage of Lorem Ipsum</li>
                         <li>All the Lorem Ipsum generators on the Internet tend to repeat</li>
                         <li>It uses a dictionary of over 200 Latin words, combined with a handful</li>
@@ -236,10 +304,59 @@
                     </div>
                 </div>
             </section>
-            <section id="versions">
+            <section id="advanced">
                 <div>
-                    <h2>Versions</h2>
+                    <h2>Advanced</h2>
                     <p class="lead">Nor could I possibly forget that, do what I would, I only had the management.</p>
+                </div>
+
+                <div id="integrations">
+                    <h3>Integrations</h3>
+                    <p class="mb-4">So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distinctly to perceive that my own individuality was now merged in a joint stock company of two; that my free will had received.</p>
+                    <div class="row row-cols row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card p-4">
+                                <img class="mb-4" src="img/sketch_logo.png" alt="Sketch" width="50" height="50">
+                                <h4>Sketch</h4>
+                                <p class="small mb-0">Mac app for designers to create, team up, prototype, and more.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-4">
+                                <img class="mb-4" src="img/github_logo.avif" alt="GitHub" width="50" height="50">
+                                <h4>GitHub</h4>
+                                <p class="small mb-0">GitHub is a code hosting platform for version control.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-4">
+                                <img class="mb-4" src="img/trello_logo.avif" alt="Trello" width="50" height="50">
+                                <h4>Trello</h4>
+                                <p class="small mb-0">It empowers your team to manage any type of project.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-4">
+                                <img class="mb-4" src="img/slack_logo.avif" alt="Slack" width="50" height="50">
+                                <h4>Slack</h4>
+                                <p class="small mb-0">Slack is a messaging app what brings people together.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-4">
+                                <img class="mb-4" src="img/todoist_logo.avif" alt="Todoist" width="50" height="50">
+                                <h4>Todoist</h4>
+                                <p class="small mb-0">It keeps track of professional and personal projects.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-4">
+                                <img class="mb-4" src="img/google_drive_logo.avif" alt="Google Drive" width="50" height="50">
+                                <h4>Google Drive</h4>
+                                <p class="small mb-0">It is a cloud-based storage service to access files online.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

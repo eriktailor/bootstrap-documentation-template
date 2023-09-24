@@ -10,7 +10,7 @@ $(document).ready(function() {
         var navLink = $('<a class="nav-link"></a>').attr('href', '#' + sectionId).text(sectionTitle);
         
         // find nested div elements within the section
-        var nestedDivs = $(this).find('div[id]');
+        var nestedDivs = $(this).children('div[id]');
 
         if (nestedDivs.length > 0) {
             var subNav = $('<ul class="nav flex-column border-start ps-3"></ul>');
