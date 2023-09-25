@@ -31,18 +31,6 @@
                 color: $primary;
             }
         }
-        > .nav > .nav-item > .nav-link {
-            &.active {
-                font-weight: bold;
-                color: $dark;
-            }
-        }
-        /* .nav .nav {
-            display: none;
-        }
-        .nav .active + .nav {
-            display: block;
-        } */
     }
 }
 
