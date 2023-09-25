@@ -29,7 +29,7 @@
         </script>
     </div>
 
-    <aside class="docs-sidebar offcanvas-lg offcanvas-start fixed-top vh-100 bg-white" id="docsSidebar">
+    <aside class="docs-sidebar offcanvas-lg offcanvas-start vh-100 bg-white" id="docsSidebar">
         <div class="offcanvas-header d-flex">
             <a class="navbar-brand d-flex align-items-center" href="/">
                 <img class="me-2" src="img/bootstrap-logo-shadow.png" alt="Bootstrap Logo" width="40px" height="33px">
@@ -43,6 +43,18 @@
             </nav>
         </div>
     </aside>
+
+    <nav class="docs-navbar d-lg-none bg-white fixed-top" id="docsNavbar">
+        <div class="container-md d-flex align-items-center justify-content-between h-100">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img class="me-2" src="img/bootstrap-logo-shadow.png" alt="Bootstrap Logo" width="40px" height="33px">
+                <h5 class="mb-0">Docs Template</h5>
+            </a>
+            <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#docsSidebar" aria-controls="docsSidebar">
+                <i class="uil uil-subject fs-1 lh-sm"></i>
+            </button>
+        </div>
+    </nav>
 
     <main class="docs-content position-relative w-100">
 
@@ -67,7 +79,7 @@
             </g>
         </svg>
 
-        <div class="container col-md-10 col-lg-8 col-xl-6" data-bs-spy="scroll" data-bs-target="#docsMenu" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -70%" tabindex="0">
+        <div class="container-md col-md-10 col-lg-8 col-xl-6" data-bs-spy="scroll" data-bs-target="#docsMenu" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -70%" tabindex="0">
             <section>
                 <h1 class="mt-5 mb-0">Documentation template with Bootstrap 5 and Vite.js</h1>
                 <div>

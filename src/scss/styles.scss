@@ -16,6 +16,11 @@
 
 .docs-sidebar {
     width: 300px;
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
     .docs-nav {
         .nav-link {
             padding: 6px 0;  
@@ -38,6 +43,10 @@
             display: block;
         } */
     }
+}
+
+.docs-navbar {
+    height: 70px;
 }
 
 .docs-content {
