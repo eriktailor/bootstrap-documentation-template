@@ -1,4 +1,5 @@
 const path = require('path');
+import autoprefixer from 'autoprefixer'
 
 export default {
     root: path.resolve(__dirname, 'src'),
@@ -8,5 +9,12 @@ export default {
     server: {
         port: 8080,
     },
+    css: {
+        postcss: {
+            plugins: [
+                autoprefixer({}) // add options if needed
+            ],
+        }
+    }
 };
 
