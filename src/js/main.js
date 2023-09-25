@@ -39,7 +39,7 @@ $(document).ready(function() {
     });
 
     /**
-     * Dynamic search field init
+     * Generate search result list items
      */
     $('section[id] h3').each(function() {
         var heading = $(this).text();
