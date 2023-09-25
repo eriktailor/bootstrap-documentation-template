@@ -47,6 +47,7 @@ $(document).ready(function() {
         var parentId = $(this).closest('section').attr('id');
         var parentName = parentId[0].toUpperCase() + parentId.slice(1).replace(/-/g, ' ');
         
+        // build search result list items
         var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4" href="#'+id+'" style="display:none">';
             listItem += '<h4 class="mt-1">'+heading+'</h4>';
             listItem += '<small>'+parentName+'</small>';
@@ -61,16 +62,24 @@ $(document).ready(function() {
     $('#docsSearch').on('input', function() {
 		var searchText = $(this).val().toLowerCase();
 
+        // hide all list items
         $('.list-group-item').hide();
         
+        // loop through all divs
 		$('div[id]').each(function() {
 			var divContent = $(this).text().toLowerCase();
-			
+            
+            // if content of div includes search input text
 			if (divContent.indexOf(searchText) >= 0) {
 				var id = $(this).attr('id');
                 $('.list-group-item[href="#'+id+'"]').show();
 			} 
 		});
+
+        // if search input is cleared
+        if (!this.value) {
+            $('.list-group-item').hide();
+        }
 	});
 
 
