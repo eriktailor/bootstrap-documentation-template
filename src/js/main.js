@@ -68,9 +68,19 @@ $(document).ready(function() {
 			if (h3Text.indexOf(searchText) >= 0) {
 				$(this).css('background', 'yellow');
 			} else {
-				$(this).css('background', 'red');
+				$(this).css('background', 'inherit');
 			}
 		});
+
+        $('#searchResults h4').each(function() {
+            var h4Text = $(this).text().toLowerCase();
+
+            if (h4Text.indexOf(searchText) >= 0) {
+				$(this).parent('a').css('background', 'yellow');
+			} else {
+                $(this).parent('a').css('background', 'inherit');
+            }
+        });
 	});
 
 
