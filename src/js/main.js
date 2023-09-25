@@ -63,7 +63,7 @@ $(document).ready(function() {
 		var searchText = $(this).val().toLowerCase();
 
         // hide all list items
-        $('.list-group-item').hide();
+        $('#searchResults a').hide();
         
         // loop through all divs
 		$('div[id]').each(function() {
@@ -72,15 +72,23 @@ $(document).ready(function() {
             // if content of div includes search input text
 			if (divContent.indexOf(searchText) >= 0) {
 				var id = $(this).attr('id');
-                $('.list-group-item[href="#'+id+'"]').show();
+                $('#searchResults a[href="#'+id+'"]').show();
 			} 
 		});
 
         // if search input is cleared
         if (!this.value) {
-            $('.list-group-item').hide();
+            $('#searchResults a').hide();
         }
 	});
+
+    /**
+     * Hide search results when it's clicked
+     */
+    $('#searchResults a').on('click', function() {
+        $('#searchResults a').hide();
+        $('#docsSearch').val('');
+    });
 
 
 
