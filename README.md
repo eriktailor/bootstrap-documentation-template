@@ -1,9 +1,14 @@
 # Bootstrap 5 Documentation Template
-This is a free documentation template with a sleek design, built on Bootstrap 5 and Vite.js.
+![Bootstrap 5 Documentation Template Screenshot](/screenshot.jpeg)
+
+This is a free html template for documentation of apps, softwares, websites, and more. It's built on Bootstrap 5 and Vite, featuring a modern sleek design with many cool professional features, including everything what a useful yet practical documentation template should contain.
 
 ## Table of contents
 - [Features](#features)
 - [Quickstart](#quickstart)
+- [Installion](#installion)
+- [Resources](#resources)
+- [Todos](#todos)
 
 ## Features
 - Semantic HTML5 code
@@ -16,6 +21,27 @@ This is a free documentation template with a sleek design, built on Bootstrap 5 
 1. Clone the repo: `git clone https://github.com/eriktailor/BootstrapDocsTemplate.git`
 2. Install npm: `npm install`
 3. Run development server: `npm run dev`
+
+## Installion
+### Clone repo
+```
+# clone the repo
+$ git clone https://github.com/eriktailor/BootstrapDocsTemplate.git my-docs
+
+# go into app's directory
+$ cd my-docs
+
+# install app's dependencies
+$ npm install
+```
+### Usuage
+```
+# serve with hot reload at localhost:8080.
+$ npm run dev
+
+# build for production with minification
+$ npm run build
+```
 
 ## Resources
 - [Bootstrap 5](https://getbootstrap.com) - the latest Bootstrap version gives the base structure
