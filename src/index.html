@@ -31,7 +31,7 @@
     </nav>
 
     <div class="d-flex">
-        <aside class="docs-sidebar offcanvas-lg offcanvas-start vh-100 bg-white" id="docsSidebar">
+        <aside class="docs-sidebar offcanvas-lg offcanvas-start vh-100 bg-white d-flex flex-column" id="docsSidebar">
             <div class="offcanvas-header d-flex">
                 <a class="navbar-brand d-flex align-items-center" href="/">
                     <img class="me-2" src="img/bootstrap-logo-shadow.png" alt="Bootstrap Logo" width="40px" height="33px">
@@ -39,10 +39,13 @@
                 </a>
                 <button class="btn-close d-md-none me-1 opacity-25" type="button" data-bs-dismiss="offcanvas" data-bs-target="#docsSidebar" aria-label="Close Sidebar"></button>
             </div>
-            <div class="offcanvas-body p-3">
+            <div class="offcanvas-body flex-grow-1 p-3">
                 <nav class="docs-nav w-100" id="docsMenu">
                     <ul class="nav flex-column"></ul>
                 </nav>
+            </div>
+            <div class="offcanvas-footer p-3">
+                <a class="btn btn-primary w-100" href="https://eriktailor.hu" target="_blank">Visit my website</a>
             </div>
         </aside>
 
@@ -85,7 +88,7 @@
                     <div>
                         <h2>Introduction</h2>
                         <p class="lead mb-4">This is a free documentation template with a modern sleek design, built on Bootstrap 5 and Vite.js. Just download it and easily customize for your needs.</p>
-                        <a class="btn btn-primary" href="#quickstart">See how to get started</a>
+                        <a class="btn btn-outline-primary" href="#quickstart">See how to get started</a>
                     </div>
 
                     <div id="features">
@@ -257,7 +260,7 @@
                             <li>In most cases, he, one way or other, has this with a plurality of other mortals</li>
                             <li>If your banker breaks, you snap; if your apothecary by mistake sends you poison</li>
                         </ol>
-                        <a class="btn btn-primary" href="#projects">Go to projects page</a>
+                        <a class="btn btn-outline-primary" href="#projects">Go to projects page</a>
                     </div>
 
                     <div id="coding-rules">
@@ -371,6 +374,20 @@
                         </div>
                     </div>
                 </section>
+                <footer class="d-flex justify-content-between align-items-center py-3">
+                    <p class="small text-muted mb-0">© Copyright 2023. All rights reserved.</p>
+                    <div class="d-flex">
+                        <a class="lh-sm text-muted me-2" href="#" type="button">
+                            <i class="uil uil-twitter fs-4"></i>
+                        </a>
+                        <a class="lh-sm text-muted me-2" href="#" type="button">
+                            <i class="uil uil-dribbble fs-4"></i>
+                        </a>
+                        <a class="lh-sm text-muted" href="#" type="button">
+                            <i class="uil uil-github fs-4"></i>
+                        </a>
+                    </div>
+                </footer>
             </div>
 
             <svg class="bg-gradient-bulb-right position-fixed end-0 bottom-0" width="540px" height="731px" viewBox="0 0 540 731" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
