@@ -46,13 +46,35 @@ $(document).ready(function() {
         var parentId = $(this).closest('section').attr('id');
         var parentName = parentId[0].toUpperCase() + parentId.slice(1).replace(/-/g, ' ');
         
-        var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4">';
+        var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4" data-section="'+heading.toLowerCase()+'">';
             listItem += '<h4 class="mt-1">'+heading+'</h4>';
             listItem += '<small>'+parentName+'</small>';
             listItem += '</a>';
 
         $('#searchResults').append(listItem);
     });
+
+    /**
+     * Dynamic search field
+     */
+    $('#docsSearch').on('input', function() {
+		var searchText = $(this).val().toLowerCase();
+		console.log('Searchtext: '+searchText);
+
+		$('div[id] h3').each(function() {
+			var h3Text = $(this).text().toLowerCase();
+			console.log('h3Text: '+h3Text);
+			
+			if (h3Text.indexOf(searchText) >= 0) {
+				$(this).css('background', 'yellow');
+			} else {
+				$(this).css('background', 'red');
+			}
+		});
+	});
+
+
+
 
 
 });
