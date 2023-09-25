@@ -136,19 +136,19 @@
 
                     <div id="quickstart">
                         <h3>Quickstart</h3>
-                        <p>First clone the GitHub repository:</p>
-                        <pre><code class="language-markup">git clone https://github.com/eriktailor/BootstrapDocsTemplate.git</code></pre>
-                        <p>Then go into the project folder in a terminal, install the dependencies and run the development server with <code>npm install && npm run dev</code>. Now if you go to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> you will see the frontend.</p>
+                        <p>First clone the GitHub repository, then cd into the project folder in a new terminal window and install the dependencies then run the development server. </p>
+<pre><code class="language-markup">git clone https://github.com/eriktailor/BootstrapDocsTemplate.git
+npm install && npm run dev</code></pre>
                     </div>
 
-                    <div id="create-template">
-                        <h3>Create template</h3>
-                        <p class="mb-4">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <a href="#">with the release</a> of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.</p>
+                    <div id="view-template">
+                        <h3>View template</h3>
+                        <p class="mb-4">Now if you go to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> you will see the frontend. The layout has a fixed sidebar on the left side, and a scrollable main content area at the middle. The sidebar contains a navigation menu, which links are dynamically generated from each section block's title. There's also a lightweight footer at the bottom of the page.</p>
                         <img class="img-fluid rounded-4" src="img/browser_mockup_1.jpg" alt="Browser mockup">
                     </div>
 
-                    <div id="resources">
-                        <h3>Resources</h3>
+                    <div id="used-sources">
+                        <h3>Used sources</h3>
                         <p>The following free resources were used along with this project:</p>
                         <ul>
                             <li><a target="_blank" href="https://getbootstrap.com">Bootstrap</a> - the latest version, Bootstrap 5 gives the base structure of the template</li>
@@ -162,7 +162,7 @@
 
                     <div id="folder-structure">
                         <h3>Folder structure</h3>
-                        <p>More <a href="#">obscure latin words</a>, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source:</p>
+                        <p>The <b>dist</b> folder contains the built files for production. The <b>src</b> folder contains all of the source files. The <b>design</b> folder contains the editable <a href="https://www.sketch.com/">Sketch</a> file of the design. Below you can see the structure of the main project folder:</p>
                         <div class="card p-4 mb-3">
                             <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#folderDist" aria-expanded="true" aria-controls="folderDist">
                                 <i class="uil uil-folder text-primary fs-5"></i>
@@ -235,9 +235,15 @@
 
                     <div id="dependencies">
                         <h3>Dependencies</h3>
-                        <p class="mb-5">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter banh mi, squid keffiyeh High Life Brooklyn twee craft <a href="#">beer tousled chillwave</a>. PBR&B selfies chillwave, bespoke tote bag blog post-ironic. Single-origin coffee put a bird on it craft beer YOLO, Portland hella deep v Schlitz. Tumblr Bushwick post-ironic Thundercats. Vinyl 90's keytar, literally cardigan Williamsburg.</p>
+                        <p>There are a few <b>npm</b> dependencies need to be installed before serving the project:</p>
+                        <ul class="mb-5">
+                            <li><a target="_blank" href="https://popper.js.org">popperjs</a> - a positioning solution for tooltips and popovers</li>
+                            <li><a target="_blank" href="https://github.com/postcss/autoprefixer">autoprefixer</a> - a postcss plugin that adds vendor prefixes to the output css files</li>
+                            <li><a target="_blank" href="https://getbootstrap.com">bootstrap</a> - latest version of Bootstrap, what is a powerful and extensible frontend toolkit</li>
+                            <li><a target="_blank" href="https://postcss.org/">postcss</a> - a tool for transforming CSS with JavaScript (required for using autoprefixer)</li>
+                        </ul>
                         <p class="alert bg-primary-subtle text-primary" role="alert">
-                            <b class="text-primary">Note:</b> you may say that, by exceeding caution, you may possibly escape these and other evil.
+                            <b class="text-primary">Note:</b> to be able to install these packages via npm, you need to have Node.js installed on your system.
                         </p>
                     </div>
                 </section>
