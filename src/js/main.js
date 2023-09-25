@@ -46,7 +46,7 @@ $(document).ready(function() {
         var parentId = $(this).closest('section').attr('id');
         var parentName = parentId[0].toUpperCase() + parentId.slice(1).replace(/-/g, ' ');
         
-        var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4" data-section="'+heading.toLowerCase()+'">';
+        var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4" data-section="'+heading.toLowerCase()+'" style="display:none">';
             listItem += '<h4 class="mt-1">'+heading+'</h4>';
             listItem += '<small>'+parentName+'</small>';
             listItem += '</a>';
@@ -59,17 +59,15 @@ $(document).ready(function() {
      */
     $('#docsSearch').on('input', function() {
 		var searchText = $(this).val().toLowerCase();
-		console.log('Searchtext: '+searchText);
 
-        $('.list-group-item').css('background', 'white');
+        $('.list-group-item').hide();
         
 		$('div[id]').each(function() {
 			var divContent = $(this).text().toLowerCase();
 			
 			if (divContent.indexOf(searchText) >= 0) {
 				var title = $(this).find('h3').text().toLowerCase();
-                console.log(title);
-                $('.list-group-item[data-section="'+title+'"]').css('background', 'yellow');
+                $('.list-group-item[data-section="'+title+'"]').show();
 			} 
 		});
 	});
