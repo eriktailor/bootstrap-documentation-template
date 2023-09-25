@@ -1,7 +1,20 @@
 $(document).ready(function() {
 
     /**
-     * Build sidebar menu dynamically from sections and divs
+     * Page loader animation
+     */
+    document.onreadystatechange = function () {
+        if (document.readyState !== 'complete') {
+            document.querySelector('body').style.visibility = 'hidden';
+            document.querySelector('#docsLoader').style.visibility = 'visible';
+        } else {
+            document.querySelector('#docsLoader').style.display = 'none';
+            document.querySelector('body').style.visibility = 'visible';
+        }
+    };
+    
+    /**
+     * Build dynamic sidebar menu from sections and divs
      */
     $('section[id]').each(function() {
         var sectionId = $(this).attr('id');
