@@ -61,26 +61,17 @@ $(document).ready(function() {
 		var searchText = $(this).val().toLowerCase();
 		console.log('Searchtext: '+searchText);
 
-		$('div[id] h3').each(function() {
-			var h3Text = $(this).text().toLowerCase();
-			console.log('h3Text: '+h3Text);
+        $('.list-group-item').css('background', 'white');
+        
+		$('div[id]').each(function() {
+			var divContent = $(this).text().toLowerCase();
 			
-			if (h3Text.indexOf(searchText) >= 0) {
-				$(this).css('background', 'yellow');
-			} else {
-				$(this).css('background', 'inherit');
-			}
+			if (divContent.indexOf(searchText) >= 0) {
+				var title = $(this).find('h3').text().toLowerCase();
+                console.log(title);
+                $('.list-group-item[data-section="'+title+'"]').css('background', 'yellow');
+			} 
 		});
-
-        $('#searchResults h4').each(function() {
-            var h4Text = $(this).text().toLowerCase();
-
-            if (h4Text.indexOf(searchText) >= 0) {
-				$(this).parent('a').css('background', 'yellow');
-			} else {
-                $(this).parent('a').css('background', 'inherit');
-            }
-        });
 	});
 
 
