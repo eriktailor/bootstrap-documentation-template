@@ -1,11 +1,13 @@
 /* -------------------------------------------------------- 
 # Sections
 ---------------------------------------------------------*/
-section {
+section, .section {
     padding: 50px 0;
     border-bottom: 1px solid $light;
+    display: flow-root;
     > div {
         padding: 30px 0;
+        display: flow-root;
     }
     @include media-breakpoint-down(sm) {
         padding: 1rem 0;
