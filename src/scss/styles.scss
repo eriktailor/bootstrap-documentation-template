@@ -8,6 +8,7 @@
 @import "bootstrap/scss/bootstrap";
 
 // Partials
+@import 'helpers';
 @import 'typography';
 @import 'components';
 
@@ -53,10 +54,4 @@
     @include media-breakpoint-up(lg) {
         margin-left: 300px;
     }
-}
-
-
-
-::placeholder {
-    color: red;
 }
