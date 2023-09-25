@@ -63,7 +63,7 @@ $(document).ready(function() {
         // build search result list items
         var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4" href="#'+id+'" style="display:none">';
             listItem += '<h4 class="mt-1">'+heading+'</h4>';
-            listItem += '<small>'+parentName+'</small>';
+            listItem += '<small>in '+parentName+'</small>';
             listItem += '</a>';
 
         $('#searchResults').append(listItem);
@@ -106,15 +106,18 @@ $(document).ready(function() {
      * Hide search results when it's clicked
      */
     $('#searchResults a').on('click', function(event) {
-        event.preventDefault();
         var sectionId = $(this).attr('href');
+        var w = $(window).width();
 
         clearSearch();
 
         // scroll offset bug fix
-        $('html, body').stop().animate({
-            scrollTop: $(sectionId).offset().top - 70
-        });
+        if (w < 992) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: $(sectionId).offset().top - 70
+            });
+        }
     });
 
     /**
