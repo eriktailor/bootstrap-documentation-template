@@ -16,9 +16,6 @@ p.lead {
 a {
     color: $primary;
     @extend .link-offset-1;
-    &:hover, &:focus {
-        color: $primary-light;
-    }
 }
 
 b, strong {
