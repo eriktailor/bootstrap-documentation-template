@@ -11,35 +11,4 @@
 @import 'helpers';
 @import 'typography';
 @import 'components';
-
-
-
-
-.docs-sidebar {
-    width: 300px;
-    @include media-breakpoint-up(md) {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    .docs-nav {
-        .nav-link {
-            padding: 6px 0;  
-            color: $body-color;
-            font-weight: 500;
-            &:hover, &:focus, &.active {
-                color: $primary;
-            }
-        }
-    }
-}
-
-.docs-navbar {
-    height: 70px;
-}
-
-.docs-content {
-    @include media-breakpoint-up(lg) {
-        margin-left: 300px;
-    }
-}
+@import 'layouts';

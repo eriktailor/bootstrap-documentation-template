@@ -1,0 +1,53 @@
+/* -------------------------------------------------------- 
+# Sidebar
+---------------------------------------------------------*/
+.docs-sidebar {
+    width: 300px;
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .docs-nav {
+        .nav-link {
+            padding: 6px 0;  
+            color: $body-color;
+            font-weight: 500;
+            &:hover, &:focus, &.active {
+                color: $primary;
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------- 
+# Mobile navbar
+---------------------------------------------------------*/
+.docs-navbar {
+    height: 70px;
+}
+
+/* -------------------------------------------------------- 
+# Content
+---------------------------------------------------------*/
+.docs-content {
+    @include media-breakpoint-up(lg) {
+        margin-left: 300px;
+    }
+}
+
+/* -------------------------------------------------------- 
+# Section
+---------------------------------------------------------*/
+section, .section {
+    padding: 50px 0;
+    border-bottom: 1px solid $light;
+    display: flow-root;
+    > div {
+        padding: 30px 0;
+        display: flow-root;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 1rem 0;
+    }
+}
