@@ -53,4 +53,3 @@ $ npm run build
 
 ## Todos
 - Sidebar nav scrollspy doesn't work when scrolled backwards
-- On mobile size, when a sidebar link is clicked, it should close the offcanvas

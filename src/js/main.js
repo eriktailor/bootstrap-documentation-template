@@ -90,6 +90,13 @@ $(document).ready(function() {
         $('#docsSearch').val('');
     });
 
+    /**
+     * Close sidebar on anchor link click
+     */
+    $('#docsSidebar .nav-link').on('click', function() {
+        $('#docsSidebar').offcanvas('hide');
+    });
+
 
 
 
