@@ -2,6 +2,7 @@ const path = require('path');
 import autoprefixer from 'autoprefixer'
 
 export default {
+    base: './',
     root: path.resolve(__dirname, 'src'),
     build: {
         outDir: '../dist',
