@@ -42,11 +42,12 @@ $(document).ready(function() {
      * Generate search result list items
      */
     $('section[id] h3').each(function() {
+        var id = $(this).parent('div').attr('id');
         var heading = $(this).text();
         var parentId = $(this).closest('section').attr('id');
         var parentName = parentId[0].toUpperCase() + parentId.slice(1).replace(/-/g, ' ');
         
-        var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4" data-section="'+heading.toLowerCase()+'" style="display:none">';
+        var listItem  = '<a class="list-group-item list-group-item-action py-3 px-4" href="#'+id+'" style="display:none">';
             listItem += '<h4 class="mt-1">'+heading+'</h4>';
             listItem += '<small>'+parentName+'</small>';
             listItem += '</a>';
@@ -66,8 +67,8 @@ $(document).ready(function() {
 			var divContent = $(this).text().toLowerCase();
 			
 			if (divContent.indexOf(searchText) >= 0) {
-				var title = $(this).find('h3').text().toLowerCase();
-                $('.list-group-item[data-section="'+title+'"]').show();
+				var id = $(this).attr('id');
+                $('.list-group-item[href="#'+id+'"]').show();
 			} 
 		});
 	});
