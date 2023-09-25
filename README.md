@@ -53,3 +53,4 @@ $ npm run build
 
 ## Todos
 - Sidebar nav scrollspy doesn't work when scrolled backwards
+- On mobile size, when a search result is clicked, the scroll overflow isn't good

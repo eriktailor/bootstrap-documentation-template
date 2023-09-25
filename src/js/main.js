@@ -83,11 +83,28 @@ $(document).ready(function() {
 	});
 
     /**
+     * Clear search input and hide search results
+     */
+    function clearSearch() {
+        $('#searchResults a').hide();
+        $('#docsSearch').val('');
+    }
+    /**
      * Hide search results when it's clicked
      */
     $('#searchResults a').on('click', function() {
-        $('#searchResults a').hide();
-        $('#docsSearch').val('');
+        clearSearch();
+    });
+
+    /**
+     * Hide search results when clicked outside of header
+     */
+    $('body').on('click', function(event) {    
+        if (event.target.id == 'docsHeader') {
+            return;
+        } else {
+            clearSearch();
+        }
     });
 
     /**
