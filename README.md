@@ -7,17 +7,20 @@ This is a free html template for documentation of apps, softwares, websites, and
 [Check out the live demo here >>>](https://eriktailor.github.io/bootstrap-docs-template)
 
 ## Features
-- Modern sleek design
-- Semantic HTML5 code
-- Dynamic sidebar menu
-- Dynamic search field
-- Mobile friendly layout
-- Sketch file included
+-   modern, sleek minimal design style
+-   lightweight, rapid fast loading speed
+-   completely responsive using fluid layouts
+-   dynamic sidebar menu automatically generated from titles
+-   dynamic search field what looks for string in all content
+-   compress & minify all html, css and js output
+-   code blocks with syntax highlighting
+-   page loader animation effect
+-   included Sketch design file
 
 ## Installion
 Clone the repository
 ```
-git clone https://github.com/eriktailor/BootstrapDocsTemplate.git docs-template
+git clone https://github.com/eriktailor/bootstrap-documentation-template.git docs-template
 ```
 
 Go in the project folder:
