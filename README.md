@@ -1,46 +1,45 @@
 # Bootstrap 5 Documentation Template
-![Bootstrap 5 Documentation Template Screenshot](/screenshot.jpeg)
+[![Foo](/screenshot.png)](https://eriktailor.github.io/bootstrap-docs-template)
 
 This is a free html template for documentation of apps, softwares, websites, and more. It's built on Bootstrap 5 and Vite, featuring a modern sleek design with many cool professional features, including everything what a useful yet practical documentation template should contain.
 
-## Table of contents
-- [Features](#features)
-- [Quickstart](#quickstart)
-- [Installion](#installion)
-- [Resources](#resources)
-- [Todos](#todos)
+## Demo
+[Check out the live demo here >>>](https://eriktailor.github.io/bootstrap-docs-template)
 
 ## Features
+- Modern sleek design
 - Semantic HTML5 code
 - Dynamic sidebar menu
 - Dynamic search field
 - Mobile friendly layout
 - Sketch file included
 
-## Quickstart
-1. Clone the repo: `git clone https://github.com/eriktailor/BootstrapDocsTemplate.git`
-2. Install npm: `npm install`
-3. Run development server: `npm run dev`
-
 ## Installion
-### Clone repo
+Clone the repository
 ```
-# clone the repo
-$ git clone https://github.com/eriktailor/BootstrapDocsTemplate.git my-docs
-
-# go into app's directory
-$ cd my-docs
-
-# install app's dependencies
-$ npm install
+git clone https://github.com/eriktailor/BootstrapDocsTemplate.git docs-template
 ```
-### Usuage
-```
-# serve with hot reload at localhost:8080.
-$ npm run start
 
-# build for production with minification
-$ npm run build
+Go in the project folder:
+```
+cd docs-template
+```
+
+Install dependencies:
+```
+npm install
+```
+
+
+## Usuage
+Serve project with hot reload at [http://localhost:8080](http://localhost:8080):
+```
+npm run start
+```
+
+Build for production with minification and vendor prefixes:
+```
+npm run build
 ```
 
 ## Resources
@@ -51,5 +50,5 @@ $ npm run build
 - [Unicons](https://vitejs.dev) - a free collection of scaleable and colorable svg UI icons
 - [Prism](https://vitejs.dev) - a javascript library for syntax highlighting code blocks
 
-## Todos
-- Sidebar nav scrollspy doesn't work when scrolled backwards
+## Author
+**Bootstrap Docs Template** was created by [Erik Tailor](https://eriktailor.hu) in 2023.
