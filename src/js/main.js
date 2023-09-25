@@ -92,8 +92,16 @@ $(document).ready(function() {
     /**
      * Hide search results when it's clicked
      */
-    $('#searchResults a').on('click', function() {
+    $('#searchResults a').on('click', function(event) {
+        event.preventDefault();
+        var sectionId = $(this).attr('href');
+
         clearSearch();
+
+        // scroll offset bug fix
+        $('html, body').stop().animate({
+            scrollTop: $(sectionId).offset().top - 70
+        });
     });
 
     /**
